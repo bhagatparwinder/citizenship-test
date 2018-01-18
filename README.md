@@ -11,3 +11,9 @@ Get in touch: **contact@bhagat.me**
 Follow me on Twitter: **https://twitter.com/bhagatparwinder**
 
 Connect with me on Linkedin: **https://www.linkedin.com/in/bhagatparwinder**
+
+---
+
+Special thanks to:
+
+Favicon : [Muharrem Senyil](https://dribbble.com/msenyil)
