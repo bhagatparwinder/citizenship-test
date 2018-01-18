@@ -1,3 +1,7 @@
-<p>
-  question works!
-</p>
+<div class="question">
+    Question {{data.order}}: <span class="question-desc">{{data.desc}}</span>
+    <div class="answer" *ngFor="let answer of data.choices">
+      <span class="answer-id">{{answer.id}}</span>
+      <span class="answer-desc">{{answer.desc}}</span>
+    </div>
+</div>

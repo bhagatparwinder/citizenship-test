@@ -1,0 +1,21 @@
+.question-desc {
+    font-weight: bold;
+}
+.answer {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    cursor: pointer;
+}
+.answer:hover {
+    color: #254E70;
+}
+.answer-id {
+    border: 2px solid #eee;
+    box-sizing: border-box;
+    height: 30px;
+    width: 30px;
+    padding: 3px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 10px;
+}
