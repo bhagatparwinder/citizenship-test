@@ -6,7 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./feedback.component.css']
 })
 export class FeedbackComponent implements OnInit {
-
+  data: any = {
+    answer: {
+      type: 'Correct',
+      symbol: 'check'
+    },
+    total: 10,
+    correct: 7,
+    incorrect: 3
+  };
   constructor() { }
 
   ngOnInit() {

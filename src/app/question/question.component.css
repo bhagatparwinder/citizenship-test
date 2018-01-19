@@ -1,14 +1,30 @@
+.question {
+    overflow: hidden;
+}
+
+.question-container {
+    margin-bottom: 20px;
+}
+
 .question-desc {
     font-weight: bold;
 }
+
 .answer {
     border-bottom: 1px solid #eee;
     padding: 20px;
     cursor: pointer;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #00c6ff 50%, #00c6ff);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    /* transition: all .15s ease-in; */
 }
+
 .answer:hover {
-    color: #254E70;
+    background-position: 0 0;
+    color: #ffffff;
 }
+
 .answer-id {
     border: 2px solid #eee;
     box-sizing: border-box;
@@ -18,4 +34,16 @@
     text-align: center;
     display: inline-block;
     margin-right: 10px;
+}
+
+button {
+    float: right;
+    background: #00c6ff;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    border: none;
 }
