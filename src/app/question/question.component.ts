@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../shared/data-service/data.service';
 
 @Component({
   selector: 'app-question',
@@ -6,31 +7,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./question.component.css']
 })
 export class QuestionComponent implements OnInit {
-  data: any = {
-      order: 1,
-      desc: 'Name one U.S. territory?',
-      choices: [{
-              id: 'A',
-              desc: 'Bermuda'
-          },
-          {
-              id: 'B',
-              desc: 'Guam'
-          },
-          {
-              id: 'C',
-              desc: 'Cayman Islands'
-          },
-          {
-              id: 'D',
-              desc: 'Haiti'
-          }
-      ]
-  };
+  public data: any = {};
+  public isLast: boolean;
 
-  constructor() { }
+  constructor(private dataService: DataService) {
+    try {
+      this.dataService.getQuestionSubject().subscribe((data) => this.handleQuestions(data));
+    } catch (err) {
+      console.log(err);
+    }
+  }
 
   ngOnInit() {
+    this.dataService.sendNewQuestion();
+  }
+
+  handleQuestions(data): void {
+    this.data = data.question || {};
+    this.isLast = data.isLast;
+  }
+
+  nextQuestion(): void {
+    this.dataService.sendNewQuestion();
   }
 
 }

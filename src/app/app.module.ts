@@ -5,6 +5,7 @@ import { FeedbackComponent } from './feedback/feedback.component';
 import { NgModule } from '@angular/core';
 import { QuestionComponent } from './question/question.component';
 import { ScoreComponent } from './score/score.component';
+import { DataService} from './shared/data-service/data.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,9 @@ import { ScoreComponent } from './score/score.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    DataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
