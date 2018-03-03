@@ -7,7 +7,7 @@ import { DataService } from '../shared/data-service/data.service';
   styleUrls: ['./question.component.css']
 })
 export class QuestionComponent implements OnInit {
-  public data: any = {};
+  public question: any = {};
   public isLast: boolean;
 
   constructor(private dataService: DataService) {
@@ -19,16 +19,26 @@ export class QuestionComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.dataService.sendNewQuestion();
+    this.dataService.sendQuestion({next: true});
   }
 
   handleQuestions(data): void {
-    this.data = data.question || {};
+    this.question = data.question || {};
     this.isLast = data.isLast;
   }
 
   nextQuestion(): void {
-    this.dataService.sendNewQuestion();
+    this.dataService.sendQuestion({next: true});
+  }
+
+  prevQuestion(): void {
+    this.dataService.sendQuestion({next: false});
+  }
+
+  handleAnswerClick($event) {
+    const selectedChoice = $event.target.closest('.answer').dataset['answerId'];
+    const isCorrectAnswer = this.question.correctChoices.indexOf(selectedChoice) >= 0;
+    this.dataService.updateResults({id: this.question.id, isCorrectAnswer});
   }
 
 }

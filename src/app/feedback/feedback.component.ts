@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../shared/data-service/data.service';
 
 @Component({
   selector: 'app-feedback',
@@ -6,18 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./feedback.component.css']
 })
 export class FeedbackComponent implements OnInit {
-  data: any = {
-    answer: {
-      type: 'Correct',
-      symbol: 'check'
-    },
-    total: 10,
-    correct: 7,
-    incorrect: 3
-  };
-  constructor() { }
+  data: any = {};
+  constructor(private dataService: DataService) {
+    try {
+      this.dataService.getResultSubject().subscribe((data) => this.handleResultUpdate(data));
+    } catch (err) {
+      console.log(err);
+    }
+  }
 
   ngOnInit() {
+    this.dataService.sendNewResult();
+  }
+
+  handleResultUpdate(data) {
+    this.data = data;
   }
 
 }
