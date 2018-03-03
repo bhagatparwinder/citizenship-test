@@ -6,6 +6,7 @@ import { NgModule } from '@angular/core';
 import { QuestionComponent } from './question/question.component';
 import { ScoreComponent } from './score/score.component';
 import { DataService} from './shared/data-service/data.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DataService} from './shared/data-service/data.service';
     ScoreComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [
     DataService

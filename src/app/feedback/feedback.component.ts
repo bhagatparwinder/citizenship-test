@@ -9,6 +9,7 @@ import { DataService } from '../shared/data-service/data.service';
 export class FeedbackComponent implements OnInit {
   data: any = {};
   constructor(private dataService: DataService) {
+    this.data = this.initData();
     try {
       this.dataService.getResultSubject().subscribe((data) => this.handleResultUpdate(data));
     } catch (err) {
@@ -17,11 +18,19 @@ export class FeedbackComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.dataService.sendNewResult();
   }
 
   handleResultUpdate(data) {
     this.data = data;
+  }
+
+  initData(): any {
+    return {
+      isCurrentSelectionTrue: false,
+      correctTotal: 0,
+      incorrectTotal: 0,
+      total: 0
+    };
   }
 
 }

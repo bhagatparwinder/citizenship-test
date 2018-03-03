@@ -7,10 +7,11 @@ import { DataService } from '../shared/data-service/data.service';
   styleUrls: ['./question.component.css']
 })
 export class QuestionComponent implements OnInit {
-  public question: any = {};
+  public question: any;
   public isLast: boolean;
 
   constructor(private dataService: DataService) {
+    this.question = this.initQuestions();
     try {
       this.dataService.getQuestionSubject().subscribe((data) => this.handleQuestions(data));
     } catch (err) {
@@ -19,7 +20,6 @@ export class QuestionComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.dataService.sendQuestion({next: true});
   }
 
   handleQuestions(data): void {
@@ -39,6 +39,32 @@ export class QuestionComponent implements OnInit {
     const selectedChoice = $event.target.closest('.answer').dataset['answerId'];
     const isCorrectAnswer = this.question.correctChoices.indexOf(selectedChoice) >= 0;
     this.dataService.updateResults({id: this.question.id, isCorrectAnswer});
+  }
+  private initQuestions(): any {
+    return [
+      {
+        id: '',
+        desc: '',
+        choices: [{
+                id: 'A',
+                desc: ''
+            },
+            {
+                id: 'B',
+                desc: ''
+            },
+            {
+                id: 'C',
+                desc: ''
+            },
+            {
+                id: 'D',
+                desc: ''
+            }
+        ],
+        correctChoices: ''
+      }
+    ];
   }
 
 }
