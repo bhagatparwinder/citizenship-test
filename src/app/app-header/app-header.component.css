@@ -4,6 +4,8 @@ header {
     overflow: hidden;
     padding: 10px;
     border-bottom: 1px solid #eee;
+    display:flex;
+    justify-content: space-between;
 }
 
 header img {
@@ -16,13 +18,28 @@ a {
 }
 
 header .quick-links {
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     right: 10px;
 }
 
+.header-text{
+    margin-right: 10px;
+}
+
+.contributor,
+.credits{
+    display: flex;
+}
+
+.contributor{
+    justify-content: space-between;
+}
+.contributor>a{
+    padding-right:10px;
+}
 @media only screen and (max-device-width: 480px) {
-    header .quick-links {
+    header .header-text {
         display: none;
     }
 }

@@ -37,7 +37,6 @@
 }
 
 button {
-    float: right;
     background: #00c6ff;
     color: #ffffff;
     padding: 10px;
@@ -46,4 +45,11 @@ button {
     font-weight: bold;
     margin-top: 10px;
     border: none;
+}
+
+.button-group{
+    display: flex;
+}
+button.right{
+    margin-left: auto;
 }

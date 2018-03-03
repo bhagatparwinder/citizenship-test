@@ -1,10 +1,15 @@
 <div class="question">
-    <div class="question-container">Question {{data.order}}:
-        <span class="question-desc">{{data.desc}}</span>
+    <div class="question-container">Question {{question.id}}:
+        <span class="question-desc">{{question.desc}}</span>
     </div>
-    <div class="answer" *ngFor="let answer of data.choices">
-        <span class="answer-id">{{answer.id}}</span>
-        <span class="answer-desc">{{answer.desc}}</span>
+    <div (click)="handleAnswerClick($event)">
+        <div  class="answer" *ngFor="let answer of question.choices" [attr.data-answer-id]="answer.id">
+            <span class="answer-id">{{answer.id}}</span>
+            <span class="answer-desc">{{answer.desc}}</span>
+        </div>
     </div>
-    <button>Next ></button>
+    <div class="button-group">
+        <button *ngIf="question.id > 1" (click)="prevQuestion()">< Prev </button>
+        <button class="right" *ngIf="!isLast" (click)="nextQuestion()">Next ></button>
+    </div>
 </div>
