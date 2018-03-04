@@ -17,3 +17,5 @@ Connect with me on Linkedin: **https://www.linkedin.com/in/bhagatparwinder**
 Special thanks to:
 
 Favicon : [Muharrem Senyil](https://dribbble.com/msenyil)
+
+Contribution : [Tosh Sharma](https://adevkota.me/)
