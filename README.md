@@ -4,7 +4,7 @@
 
 ### This repo contains the source code for USCIS citizenship test. Feel free to copy, comment or fork
 
-Demo: *Page coming soon. Watch this space.*
+Demo: **https://adevkota.me/citizenship-test**
 
 Get in touch: **contact@bhagat.me**
 

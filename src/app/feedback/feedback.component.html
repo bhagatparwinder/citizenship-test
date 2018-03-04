@@ -1,4 +1,4 @@
 <p>
-  {{data.answer.type}} Answer
+  {{data.isCurrentSelectionTrue? 'Correct' : 'Incorrect'}} Answer
   <app-score [tally]="data"></app-score>
 </p>
