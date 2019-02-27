@@ -1,6 +1,6 @@
 # Citizenship Test
 
-## A web application that allows you to practise questions asked in the USCIS citizenship interview test. Created using Mongo, Express, Node and Angular
+## A web application that allows you to practise questions asked in the USCIS citizenship interview test. Created using Angular
 
 ### This repo contains the source code for USCIS citizenship test. Feel free to copy, comment or fork
 
