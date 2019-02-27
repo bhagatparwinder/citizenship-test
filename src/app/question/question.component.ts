@@ -9,6 +9,7 @@ import { DataService } from '../shared/data-service/data.service';
 export class QuestionComponent implements OnInit {
   public question: any;
   public isLast: boolean;
+  private selectedChoice;
 
   constructor(private dataService: DataService) {
     this.question = this.initQuestions();
@@ -23,6 +24,7 @@ export class QuestionComponent implements OnInit {
   }
 
   handleQuestions(data): void {
+    this.selectedChoice = null;
     this.question = data.question || {};
     this.isLast = data.isLast;
   }
@@ -36,9 +38,17 @@ export class QuestionComponent implements OnInit {
   }
 
   handleAnswerClick($event) {
-    const selectedChoice = $event.target.closest('.answer').dataset['answerId'];
-    const isCorrectAnswer = this.question.correctChoices.indexOf(selectedChoice) >= 0;
-    this.dataService.updateResults({id: this.question.id, isCorrectAnswer});
+    this.selectedChoice = $event.target.closest('.answer').dataset['answerId'];
+    const isCorrectAnswer = this.question.correctChoices.indexOf(this.selectedChoice) >= 0;
+    this.dataService.updateResults({id: this.question.id, isCorrectAnswer, selectedChoice: this.selectedChoice});
+  }
+
+  isSelected(answerId) {
+    return answerId === (this.question.selectedChoice || this.selectedChoice);
+  }
+
+  isIncorrect(answerId) {
+    return this.isSelected(answerId) && this.question.correctChoices.indexOf(answerId) < 0;
   }
   private initQuestions(): any {
     return [

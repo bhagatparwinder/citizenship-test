@@ -3,7 +3,10 @@
         <span class="question-desc">{{question.desc}}</span>
     </div>
     <div (click)="handleAnswerClick($event)">
-        <div  class="answer" *ngFor="let answer of question.choices" [attr.data-answer-id]="answer.id">
+        <div  class="answer" 
+            *ngFor="let answer of question.choices"
+            [ngClass]="{'selected':isSelected(answer.id), 'incorrect': isIncorrect(answer.id)}"
+            [attr.data-answer-id]="answer.id">
             <span class="answer-id">{{answer.id}}</span>
             <span class="answer-desc">{{answer.desc}}</span>
         </div>
