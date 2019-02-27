@@ -20,9 +20,18 @@
     /* transition: all .15s ease-in; */
 }
 
-.answer:hover {
+.answer:hover:not(.selected) {
     background-position: 0 0;
     color: #ffffff;
+}
+
+.answer.selected{
+    background-color: #00dddd;
+    color: white;
+}
+.answer.selected.incorrect{
+    background-color: #dd3400;
+    color: white;
 }
 
 .answer-id {

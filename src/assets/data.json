@@ -5,7 +5,7 @@
         "desc": "Name one U.S. territory?",
         "choices": [{
                 "id": "A",
-                "desc": "Bermuda"
+                "desc": "Puerto Rico"
             },
             {
                 "id": "B",
@@ -13,14 +13,18 @@
             },
             {
                 "id": "C",
-                "desc": "Cayman Islands"
+                "desc": "U.S. Virgin Islands"
             },
             {
                 "id": "D",
-                "desc": "Haiti"
+                "desc": "American Samoa"
+            },
+            {
+                "id": "E",
+                "desc": "Northern Mariana Islands"
             }
         ],
-        "correctChoices": "B"
+        "correctChoices": "ABCDE"
       },
       {
         "id": 2,
@@ -62,6 +66,148 @@
             {
                 "id": "D",
                 "desc": "Declaration of Independence"
+            }
+        ],
+        "correctChoices": "ABC"
+      },
+      {
+        "id": 4,
+        "desc": " What is an ammendment?",
+        "choices": [{
+                "id": "A",
+                "desc": "a change (to the Constitution)"
+            },
+            {
+                "id": "B",
+                "desc": "Constitution"
+            },
+            {
+                "id": "C",
+                "desc": "Declaration of Independence"
+            },
+            {
+                "id": "D",
+                "desc": "an addition (to the constitution)"
+            }
+        ],
+        "correctChoices": "AD"
+      },
+      {
+        "id": 5,
+        "desc": " What do we call the first ten amendments to the Constitution?",
+        "choices": [{
+                "id": "A",
+                "desc": "judiciary"
+            },
+            {
+                "id": "B",
+                "desc": "Declaration of Independence"
+            },
+            {
+                "id": "C",
+                "desc": "the Bill of Rights"
+            }
+        ],
+        "correctChoices": "C"
+      },
+      {
+        "id": 6,
+        "desc": "The idea of self-government is in the first three words of the Constitution. What are these words?",
+        "choices": [{
+                "id": "A",
+                "desc": "We the people"
+            },
+            {
+                "id": "B",
+                "desc": "Declaration of Independence"
+            },
+            {
+                "id": "C",
+                "desc": "the Bill of Rights"
+            }
+        ],
+        "correctChoices": "A"
+      },
+      {
+        "id": 7,
+        "desc": "What is one right or freedom from the First Amendment?",
+        "choices": [{
+                "id": "A",
+                "desc": "speech"
+            },
+            {
+                "id": "B",
+                "desc": "religion"
+            },
+            {
+                "id": "C",
+                "desc": "assembly"
+            },
+            {
+                "id": "D",
+                "desc": "press"
+            },
+            {
+                "id": "E",
+                "desc": "petition the government"
+            }
+        ],
+        "correctChoices": "ABCDE"
+      },
+      {
+        "id": 8,
+        "desc": "How many amendments does the Constitution have?",
+        "choices": [{
+                "id": "A",
+                "desc": "50"
+            },
+            {
+                "id": "B",
+                "desc": "13"
+            },
+            {
+                "id": "C",
+                "desc": "10"
+            },
+            {
+                "id": "D",
+                "desc": "27"
+            }
+        ],
+        "correctChoices": "D"
+      },
+      {
+        "id": 9,
+        "desc": "What did the Declaration of Independence do?",
+        "choices": [{
+                "id": "A",
+                "desc": "announced our independence (from Great Britain)"
+            },
+            {
+                "id": "B",
+                "desc": "declared our independence (from Great Britain)"
+            },
+            {
+                "id": "C",
+                "desc": "said that the United States is free (from Great Britain)"
+            }
+        ],
+        "correctChoices": "ABC"
+      },
+      {
+        "id": 10,
+        "desc": "What are two rights in the Declaration of Independence??",
+        "choices": [{
+                "id": "A",
+                "desc": "life, liberty"
+            },
+            {
+                "id": "B",
+                "desc": "liberty, pursuit of happiness"
+            },
+            {
+                "id": "C",
+                "desc": "life, pursuit of happiness"
             }
         ],
         "correctChoices": "ABC"
