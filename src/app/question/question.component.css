@@ -1,4 +1,7 @@
-.question {
+:host {
+    overflow: hidden;
+}
+.question-component {
     overflow: hidden;
 }
 
@@ -61,4 +64,9 @@ button {
 }
 button.right{
     margin-left: auto;
+}
+
+
+section.quiz{
+    min-height:425px;
 }
