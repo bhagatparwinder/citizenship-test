@@ -6,11 +6,18 @@
 
 Demo: **https://adevkota.me/citizenship-test**
 
-Connect with me on Linkedin: **https://www.linkedin.com/in/tosh-sharma**
+Connect with us:  
+Ashutosh   
+   * LinkedIn: **https://www.linkedin.com/in/tosh-sharma**
+
+Parwinder
+   * LinkedIn : **https://www.linkedin.com/in/bhagatparwinder/**
+   * Twitter: **https://twitter.com/bhagatparwinder**
+   * Email: **contact@bhagat.me**
 
 ---
 Contributors:
-[Tosh Sharma](https://adevkota.me/)
+[Ashutosh Sharma](https://adevkota.me/)
 [Parwinder Bhagat](https://bhagat.me/)
 
 ---
