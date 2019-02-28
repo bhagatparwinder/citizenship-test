@@ -8,7 +8,7 @@ import { state, style, trigger, transition, animate, keyframes } from '@angular/
   styleUrls: ['./question.component.css'],
   animations: [
     trigger('changeQuestionState', [
-      transition('start-next => finish', [
+      transition('start-prev => finish', [
         animate('0.6s', keyframes([
           style({transform: 'translateX(0)', offset: 0}),
           style({transform: 'translateX(100%)', opacity: 0.1, offset: 0.49}),
@@ -18,7 +18,7 @@ import { state, style, trigger, transition, animate, keyframes } from '@angular/
           style({transform: 'translateX(0)', opacity: 1, offset: 1.0})
         ]))
       ]),
-      transition('start-prev => finish', [
+      transition('start-next => finish', [
         animate('0.6s', keyframes([
           style({transform: 'translateX(0)', offset: 0}),
           style({transform: 'translateX(-100%)',  opacity: 0.1, offset: 0.49}),
