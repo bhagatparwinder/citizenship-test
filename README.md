@@ -6,11 +6,7 @@
 
 Demo: **https://adevkota.me/citizenship-test**
 
-Get in touch: **contact@bhagat.me**
-
-Follow me on Twitter: **https://twitter.com/bhagatparwinder**
-
-Connect with me on Linkedin: **https://www.linkedin.com/in/bhagatparwinder**
+Connect with me on Linkedin: **https://www.linkedin.com/in/tosh-sharma**
 
 ---
 Contributors:
