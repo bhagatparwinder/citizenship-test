@@ -16,8 +16,8 @@ Parwinder
    * Email: **contact@bhagat.me**
 
 ---
-Contributors:
-[Ashutosh Sharma](https://adevkota.me/)
+Contributors:  
+[Ashutosh Sharma](https://adevkota.me/)  
 [Parwinder Bhagat](https://bhagat.me/)
 
 ---
