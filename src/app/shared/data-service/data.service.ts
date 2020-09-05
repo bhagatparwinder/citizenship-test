@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import {Observable } from 'rxjs/Observable';
-import {Subject } from 'rxjs/Subject';
+import {Observable, Subject } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable()
@@ -51,7 +50,7 @@ export class DataService {
     });
   }
 
-  public updateResults({id, isCorrectAnswer}): void {
+  public updateResults({id, isCorrectAnswer, selectedChoice}): void {
     this.attemptedQuestions[id] = isCorrectAnswer;
     this.isCurrentSelectionTrue = isCorrectAnswer;
     this.correctTotal = Object.keys(this.attemptedQuestions)
@@ -60,6 +59,7 @@ export class DataService {
                             })
                             .length;
     this.incorrectTotal = Object.keys(this.attemptedQuestions).length - this.correctTotal;
+    this.questions.find(question => question.id === id)['selectedChoice'] = selectedChoice;
     this.sendNewResult();
   }
 }

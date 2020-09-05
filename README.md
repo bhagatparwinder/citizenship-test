@@ -1,16 +1,24 @@
 # Citizenship Test
 
-## Practise questions asked in the USCIS citizenship interview test. Created using Mongo, Express, Angular and Node
+## Practise questions asked in the USCIS citizenship interview test. Created using Angular.
 
 ### This repo contains the source code for USCIS citizenship test. Feel free to copy, comment or fork
 
 Demo: **https://adevkota.me/citizenship-test**
 
-Get in touch: **contact@bhagat.me**
+##### Connect with us: 
+Ashutosh 
+   * LinkedIn: **https://www.linkedin.com/in/tosh-sharma**
 
-Follow me on Twitter: **https://twitter.com/bhagatparwinder**
+Parwinder
+   * LinkedIn : **https://www.linkedin.com/in/bhagatparwinder/**
+   * Twitter: **https://twitter.com/bhagatparwinder**
+   * Email: **contact@bhagat.me**
 
-Connect with me on Linkedin: **https://www.linkedin.com/in/bhagatparwinder**
+---
+Contributors:  
+[Ashutosh Sharma](https://adevkota.me/)  
+[Parwinder Bhagat](https://bhagat.me/)
 
 ---
 
@@ -18,4 +26,3 @@ Special thanks to:
 
 Favicon : [Muharrem Senyil](https://dribbble.com/msenyil)
 
-Contribution : [Tosh Sharma](https://adevkota.me/)
