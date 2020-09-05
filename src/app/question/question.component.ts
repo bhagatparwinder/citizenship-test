@@ -1,6 +1,12 @@
-import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
+import {
+  animate,
+  keyframes,
+  style,
+  transition,
+  trigger
+  } from '@angular/animations';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { DataService } from '../shared/data-service/data.service';
-import { state, style, trigger, transition, animate, keyframes } from '@angular/animations';
 
 @Component({
   selector: 'app-question',

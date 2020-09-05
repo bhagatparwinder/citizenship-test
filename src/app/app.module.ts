@@ -1,13 +1,13 @@
 import { AppComponent } from './app.component';
 import { AppHeaderComponent } from './app-header/app-header.component';
-import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserModule } from '@angular/platform-browser';
+import { DataService } from './shared/data-service/data.service';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { QuestionComponent } from './question/question.component';
 import { ScoreComponent } from './score/score.component';
-import { DataService} from './shared/data-service/data.service';
-import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
