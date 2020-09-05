@@ -60,3 +60,4 @@ typings/
 
 #cli build output
 dist
+/package-lock.json
