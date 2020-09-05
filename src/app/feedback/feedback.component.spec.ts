@@ -1,5 +1,5 @@
 import { DataService } from './../shared/data-service/data.service';
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
 import { FeedbackComponent } from './feedback.component';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
@@ -8,7 +8,7 @@ describe('FeedbackComponent', () => {
   let component: FeedbackComponent;
   let fixture: ComponentFixture<FeedbackComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [
         HttpClientTestingModule

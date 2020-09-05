@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
 import { ScoreComponent } from './score.component';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
@@ -6,7 +6,7 @@ describe('ScoreComponent', () => {
   let component: ScoreComponent;
   let fixture: ComponentFixture<ScoreComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ ScoreComponent ],
       schemas: [
