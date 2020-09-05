@@ -60,5 +60,8 @@ typings/
 
 #cli build output
 dist
+
+#others
 /package-lock.json
 /yarn.lock
+.vscode
